@@ -34,7 +34,7 @@ Execute (gx link reference definition):
 Given markdown;
 a [b](c) d
 
-Execute (gx autolink):
+Execute (gx link):
   let b:url = 'c'
   let b:line = getline(1)
   AssertEqual b:Markdown_GetUrlForPosition(1, match(b:line, 'a') + 1), ''
